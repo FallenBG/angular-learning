@@ -1,3 +1,25 @@
-<div (name)="onSelectUserUpdateTask()">
-    {{ name }}
-</div>
+<section id="tasks">
+    <header>
+        <h2 (name)="onSelectUserUpdateTask()">
+            Tasks for {{ name }}
+        </h2>
+        <menu>
+            <button>
+                <!-- <button (click)="onAddTask()"> -->
+                Add Task
+            </button>
+        </menu>
+    </header>
+
+    <ul>
+        <li>
+            <app-task></app-task>
+        </li>
+        <li>
+            <app-task></app-task>
+        </li>
+        <li>
+            <app-task></app-task>
+        </li>
+    </ul>
+</section>
