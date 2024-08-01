@@ -9,7 +9,8 @@ import { Component, EventEmitter, Output, Input } from '@angular/core';
 })
 
 export class TasksComponent {
-  @Input({required: true}) name!: string;
+  // @Input() name?: string;
+  @Input() name: string | undefined;
   @Output() select  = new EventEmitter<string>();
 
   onSelectUserUpdateTask() {
