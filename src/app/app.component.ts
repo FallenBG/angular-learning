@@ -15,7 +15,7 @@ import { DUMMY_USERS } from './dummy-users';
 })
 export class AppComponent {
   users = DUMMY_USERS;
-  selectedUserName: string = '';
+  selectedUserName?: string;
 
   
 
